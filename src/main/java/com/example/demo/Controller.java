@@ -10,6 +10,6 @@ public class Controller {
     private Repository repository;
     @GetMapping("/")
     public String get(){
-        return repository.findById(1).toString();
+        return repository.findById(1).get().toString();
     }
 }
