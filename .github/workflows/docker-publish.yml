@@ -9,7 +9,7 @@ on:
 env:
   REGISTRY: docker.io
   IMAGE_NAME: ${{ github.repository }}
-  DOCKERHUB_USERNAME: rolik02
+  DOCKERHUB_USERNAME: rolik00
 
 jobs:
   build-and-push:
