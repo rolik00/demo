@@ -8,8 +8,7 @@ on:
 
 env:
   REGISTRY: docker.io
-  IMAGE_NAME: ${{ github.repository }}
-  DOCKERHUB_USERNAME: rolik00
+  IMAGE_NAME: rolik00/demo
 
 jobs:
   build-and-push:
@@ -42,4 +41,4 @@ jobs:
         with:
           context: .
           push: true
-          tags: ${{ env.DOCKERHUB_USERNAME }}/${{ env.IMAGE_NAME }}:latest
+          tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
